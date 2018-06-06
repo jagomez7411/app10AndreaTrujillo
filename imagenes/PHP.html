@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://php.net/manual/es/intro-whatis.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" class=" js flexbox flexboxlegacy datauri"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <title>PHP: ¿Qué es PHP? - Manual </title>
+
+ <link rel="shortcut icon" href="http://php.net/favicon.ico">
+ <link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">
+ <link rel="alternate" type="application/atom+xml" href="http://php.net/releases/feed.php" title="PHP Release feed">
+ <link rel="alternate" type="application/atom+xml" href="http://php.net/feed.atom" title="PHP: Hypertext Preprocessor">
+
+ <link rel="canonical" href="http://php.net/manual/es/intro-whatis.php">
+ <link rel="shorturl" href="http://php.net/manual/es/intro-whatis.php">
+ <link rel="alternate" href="http://php.net/manual/es/intro-whatis.php" hreflang="x-default">
+
+ <link rel="contents" href="http://php.net/manual/es/index.php">
+ <link rel="index" href="http://php.net/manual/es/introduction.php">
+ <link rel="prev" href="http://php.net/manual/es/introduction.php">
+ <link rel="next" href="http://php.net/manual/es/intro-whatcando.php">
+
+ <link rel="alternate" href="http://php.net/manual/en/intro-whatis.php" hreflang="en">
+ <link rel="alternate" href="http://php.net/manual/pt_BR/intro-whatis.php" hreflang="pt_BR">
+ <link rel="alternate" href="http://php.net/manual/zh/intro-whatis.php" hreflang="zh">
+ <link rel="alternate" href="http://php.net/manual/fr/intro-whatis.php" hreflang="fr">
+ <link rel="alternate" href="http://php.net/manual/de/intro-whatis.php" hreflang="de">
+ <link rel="alternate" href="http://php.net/manual/ja/intro-whatis.php" hreflang="ja">
+ <link rel="alternate" href="http://php.net/manual/ro/intro-whatis.php" hreflang="ro">
+ <link rel="alternate" href="http://php.net/manual/ru/intro-whatis.php" hreflang="ru">
+ <link rel="alternate" href="http://php.net/manual/es/intro-whatis.php" hreflang="es">
+ <link rel="alternate" href="http://php.net/manual/tr/intro-whatis.php" hreflang="tr">
+
+<link rel="stylesheet" type="text/css" href="./PHP_files/cached.php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_files/cached(1).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_files/cached(2).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_files/cached(3).php" media="screen">
+
+ <!--[if lte IE 7]>
+ <link rel="stylesheet" type="text/css" href="http://php.net/styles/workarounds.ie7.css" media="screen">
+ <![endif]-->
+
+ <!--[if lte IE 8]>
+ <script type="text/javascript">
+  window.brokenIE = true;
+ </script>
+ <![endif]-->
+
+ <!--[if lte IE 9]>
+ <link rel="stylesheet" type="text/css" href="http://php.net/styles/workarounds.ie9.css" media="screen">
+ <![endif]-->
+
+ <!--[if IE]>
+ <script type="text/javascript" src="http://php.net/js/ext/html5.js"></script>
+ <![endif]-->
+
+ <!--<base href="http://php.net/manual/es/intro-whatis.php">--><base href=".">
+
+</head>
+<body class="docs " style="">
+
+<nav id="head-nav" class="navbar navbar-fixed-top">
+  <div class="navbar-inner clearfix">
+    <a href="http://php.net/" class="brand"><img src="./PHP_files/php-logo.svg" width="48" height="24" alt="php"></a>
+    <div id="mainmenu-toggle-overlay"></div>
+    <input type="checkbox" id="mainmenu-toggle">
+    <ul class="nav">
+      <li class=""><a href="http://php.net/downloads">Downloads</a></li>
+      <li class="active"><a href="http://php.net/docs.php">Documentation</a></li>
+      <li class=""><a href="http://php.net/get-involved">Get Involved</a></li>
+      <li class=""><a href="http://php.net/support">Help</a></li>
+    </ul>
+    <form class="navbar-search" id="topsearch" action="http://php.net/search.php">
+      <input type="hidden" name="show" value="quickref">
+      <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="tt-hint search-query" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input type="search" name="pattern" class="search-query tt-query" placeholder="Search" accesskey="s" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><input type="submit" style="visibility: hidden; position: fixed"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: &quot;Fira Sans&quot;, &quot;Source Sans Pro&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></span><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span></span>
+    </form>
+  </div>
+  <div id="flash-message"></div>
+</nav>
+<nav id="trick"><div><dl>
+<dt><a href="http://php.net/manual/en/getting-started.php">Getting Started</a></dt>
+	<dd><a href="http://php.net/manual/en/introduction.php">Introduction</a></dd>
+	<dd><a href="http://php.net/manual/en/tutorial.php">A simple tutorial</a></dd>
+<dt><a href="http://php.net/manual/en/langref.php">Language Reference</a></dt>
+	<dd><a href="http://php.net/manual/en/language.basic-syntax.php">Basic syntax</a></dd>
+	<dd><a href="http://php.net/manual/en/language.types.php">Types</a></dd>
+	<dd><a href="http://php.net/manual/en/language.variables.php">Variables</a></dd>
+	<dd><a href="http://php.net/manual/en/language.constants.php">Constants</a></dd>
+	<dd><a href="http://php.net/manual/en/language.expressions.php">Expressions</a></dd>
+	<dd><a href="http://php.net/manual/en/language.operators.php">Operators</a></dd>
+	<dd><a href="http://php.net/manual/en/language.control-structures.php">Control Structures</a></dd>
+	<dd><a href="http://php.net/manual/en/language.functions.php">Functions</a></dd>
+	<dd><a href="http://php.net/manual/en/language.oop5.php">Classes and Objects</a></dd>
+	<dd><a href="http://php.net/manual/en/language.namespaces.php">Namespaces</a></dd>
+	<dd><a href="http://php.net/manual/en/language.errors.php">Errors</a></dd>
+	<dd><a href="http://php.net/manual/en/language.exceptions.php">Exceptions</a></dd>
+	<dd><a href="http://php.net/manual/en/language.generators.php">Generators</a></dd>
+	<dd><a href="http://php.net/manual/en/language.references.php">References Explained</a></dd>
+	<dd><a href="http://php.net/manual/en/reserved.variables.php">Predefined Variables</a></dd>
+	<dd><a href="http://php.net/manual/en/reserved.exceptions.php">Predefined Exceptions</a></dd>
+	<dd><a href="http://php.net/manual/en/reserved.interfaces.php">Predefined Interfaces and Classes</a></dd>
+	<dd><a href="http://php.net/manual/en/context.php">Context options and parameters</a></dd>
+	<dd><a href="http://php.net/manual/en/wrappers.php">Supported Protocols and Wrappers</a></dd>
+</dl>
+<dl>
+<dt><a href="http://php.net/manual/en/security.php">Security</a></dt>
+	<dd><a href="http://php.net/manual/en/security.intro.php">Introduction</a></dd>
+	<dd><a href="http://php.net/manual/en/security.general.php">General considerations</a></dd>
+	<dd><a href="http://php.net/manual/en/security.cgi-bin.php">Installed as CGI binary</a></dd>
+	<dd><a href="http://php.net/manual/en/security.apache.php">Installed as an Apache module</a></dd>
+	<dd><a href="http://php.net/manual/en/security.sessions.php">Session Security</a></dd>
+	<dd><a href="http://php.net/manual/en/security.filesystem.php">Filesystem Security</a></dd>
+	<dd><a href="http://php.net/manual/en/security.database.php">Database Security</a></dd>
+	<dd><a href="http://php.net/manual/en/security.errors.php">Error Reporting</a></dd>
+	<dd><a href="http://php.net/manual/en/security.globals.php">Using Register Globals</a></dd>
+	<dd><a href="http://php.net/manual/en/security.variables.php">User Submitted Data</a></dd>
+	<dd><a href="http://php.net/manual/en/security.magicquotes.php">Magic Quotes</a></dd>
+	<dd><a href="http://php.net/manual/en/security.hiding.php">Hiding PHP</a></dd>
+	<dd><a href="http://php.net/manual/en/security.current.php">Keeping Current</a></dd>
+<dt><a href="http://php.net/manual/en/features.php">Features</a></dt>
+	<dd><a href="http://php.net/manual/en/features.http-auth.php">HTTP authentication with PHP</a></dd>
+	<dd><a href="http://php.net/manual/en/features.cookies.php">Cookies</a></dd>
+	<dd><a href="http://php.net/manual/en/features.sessions.php">Sessions</a></dd>
+	<dd><a href="http://php.net/manual/en/features.xforms.php">Dealing with XForms</a></dd>
+	<dd><a href="http://php.net/manual/en/features.file-upload.php">Handling file uploads</a></dd>
+	<dd><a href="http://php.net/manual/en/features.remote-files.php">Using remote files</a></dd>
+	<dd><a href="http://php.net/manual/en/features.connection-handling.php">Connection handling</a></dd>
+	<dd><a href="http://php.net/manual/en/features.persistent-connections.php">Persistent Database Connections</a></dd>
+	<dd><a href="http://php.net/manual/en/features.safe-mode.php">Safe Mode</a></dd>
+	<dd><a href="http://php.net/manual/en/features.commandline.php">Command line usage</a></dd>
+	<dd><a href="http://php.net/manual/en/features.gc.php">Garbage Collection</a></dd>
+	<dd><a href="http://php.net/manual/en/features.dtrace.php">DTrace Dynamic Tracing</a></dd>
+</dl>
+<dl>
+<dt><a href="http://php.net/manual/en/funcref.php">Function Reference</a></dt>
+	<dd><a href="http://php.net/manual/en/refs.basic.php.php">Affecting PHP's Behaviour</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.audio.php">Audio Formats Manipulation</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.remote.auth.php">Authentication Services</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.cmdline.php">Command Line Specific Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.compression.php">Compression and Archive Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.creditcard.php">Credit Card Processing</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.crypto.php">Cryptography Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.database.php">Database Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.calendar.php">Date and Time Related Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.fileprocess.file.php">File System Related Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.international.php">Human Language and Character Encoding Support</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.image.php">Image Processing and Generation</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.remote.mail.php">Mail Related Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.math.php">Mathematical Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.nontext.php">Non-Text MIME Output</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.fileprocess.process.php">Process Control Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.basic.other.php">Other Basic Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.remote.other.php">Other Services</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.search.php">Search Engine Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.server.php">Server Specific Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.basic.session.php">Session Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.basic.text.php">Text Processing</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.basic.vartype.php">Variable and Type Related Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.webservice.php">Web Services</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.utilspec.windows.php">Windows Only Extensions</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.xml.php">XML Manipulation</a></dd>
+	<dd><a href="http://php.net/manual/en/refs.ui.php">GUI Extensions</a></dd>
+</dl>
+<dl>
+<dt>Keyboard Shortcuts</dt><dt>?</dt>
+<dd>This help</dd>
+<dt>j</dt>
+<dd>Next menu item</dd>
+<dt>k</dt>
+<dd>Previous menu item</dd>
+<dt>g p</dt>
+<dd>Previous man page</dd>
+<dt>g n</dt>
+<dd>Next man page</dd>
+<dt>G</dt>
+<dd>Scroll to bottom</dd>
+<dt>g g</dt>
+<dd>Scroll to top</dd>
+<dt>g h</dt>
+<dd>Goto homepage</dd>
+<dt>g s</dt>
+<dd>Goto search<br>(current page)</dd>
+<dt>/</dt>
+<dd>Focus search box</dd>
+</dl></div></nav>
+<div id="goto">
+    <div class="search">
+         <div class="text"></div>
+         <div class="results"><ul></ul></div>
+   </div>
+</div>
+
+  <div id="breadcrumbs" class="clearfix">
+    <div id="breadcrumbs-inner">
+          <div class="next">
+        <a href="http://php.net/manual/es/intro-whatcando.php">
+          ¿Qué puede hacer PHP? »
+        </a>
+      </div>
+              <div class="prev">
+        <a href="http://php.net/manual/es/introduction.php">
+          « Introducción        </a>
+      </div>
+          <ul>
+            <li><a href="http://php.net/manual/es/index.php">Manual de PHP</a></li>      <li><a href="http://php.net/manual/es/getting-started.php">Conceptos básicos</a></li>      <li><a href="http://php.net/manual/es/introduction.php">Introducción</a></li>      </ul>
+    </div>
+  </div>
+
+
+
+
+<div id="layout" class="clearfix">
+  <section id="layout-content">
+  <div class="page-tools">
+    <div class="change-language">
+      <form action="http://php.net/manual/change.php" method="get" id="changelang" name="changelang">
+        <fieldset>
+          <label for="changelang-langs">Change language:</label>
+          <select onchange="document.changelang.submit()" name="page" id="changelang-langs">
+            <option value="en/intro-whatis.php">English</option>
+            <option value="pt_BR/intro-whatis.php">Brazilian Portuguese</option>
+            <option value="zh/intro-whatis.php">Chinese (Simplified)</option>
+            <option value="fr/intro-whatis.php">French</option>
+            <option value="de/intro-whatis.php">German</option>
+            <option value="ja/intro-whatis.php">Japanese</option>
+            <option value="ro/intro-whatis.php">Romanian</option>
+            <option value="ru/intro-whatis.php">Russian</option>
+            <option value="es/intro-whatis.php" selected="selected">Spanish</option>
+            <option value="tr/intro-whatis.php">Turkish</option>
+            <option value="help-translate.php">Other</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <div class="edit-bug">
+      <a href="https://edit.php.net/?project=PHP&amp;perm=es/intro-whatis.php">Edit</a>
+      <a href="https://bugs.php.net/report.php?bug_type=Documentation+problem&amp;manpage=intro-whatis">Report a Bug</a>
+    </div>
+  </div><div id="intro-whatis" class="section">
+  <div class="info"><h1 class="title">¿Qué es PHP?</h1></div>
+  <p class="para">
+   <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> (acrónimo recursivo de <em>PHP: Hypertext
+   Preprocessor</em>) es un lenguaje de código abierto
+   muy popular especialmente adecuado para el desarrollo web y que
+   puede ser incrustado en HTML.
+  </p>
+  <p class="para">
+   Bien, pero ¿qué significa realmente? Un ejemplo nos aclarará las cosas:
+  </p>
+  <p class="para">
+   </p><div class="example" id="example-1">
+    <div class="info"><p><strong>Ejemplo #1 Un ejemplo introductorio</strong></p></div>
+    <div class="example-contents">
+<div class="phpcode"><code><span style="color: #000000">
+&lt;!DOCTYPE&nbsp;HTML&gt;<br>&lt;html&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Ejemplo&lt;/title&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">"¡Hola,&nbsp;soy&nbsp;un&nbsp;script&nbsp;de&nbsp;PHP!"</span><span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">?&gt;<br></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</span>
+</code></div>
+    </div>
+
+   </div>
+  <p></p>
+  <p class="para">
+   En lugar de usar muchos comandos para mostrar HTML (como en C o en Perl),
+   las páginas de PHP contienen HTML con código incrustado que hace
+   "algo" (en este caso, mostrar "¡Hola, soy un script de PHP!).
+   El código de PHP está encerrado entre las <a href="http://php.net/manual/es/language.basic-syntax.phpmode.php" class="link">etiquetas especiales
+   de comienzo y final <code class="code">&lt;?php</code> y <code class="code">?&gt;</code></a>
+   que permiten entrar y salir del "modo PHP".
+  </p>
+  <p class="para">
+   Lo que distingue a PHP de algo del lado del cliente como Javascript
+   es que el código es ejecutado en el servidor, generando HTML
+   y enviándolo al cliente. El cliente recibirá
+   el resultado de ejecutar el script, aunque no se sabrá
+   el código subyacente que era. El servidor web puede ser configurado incluso
+   para que procese todos los ficheros HTML con PHP, por lo que no hay manera
+   de que los usuarios puedan saber qué se tiene debajo de la manga.
+  </p>
+  <p class="para">
+   Lo mejor de utilizar PHP es su extrema simplicidad para el
+   principiante, pero a su vez ofrece muchas características
+   avanzadas para los programadores profesionales. No sienta miedo de
+   leer la larga lista de características de PHP. En unas pocas
+   horas podrá empezar a escribir sus primeros scripts.
+  </p>
+  <p class="para">
+   Aunque el desarrollo de PHP está centrado en la programación de scripts del lado
+   del servidor, se puede utilizar para muchas otras cosas. Siga leyendo y descubra
+   más en la sección <a href="http://php.net/manual/es/intro-whatcando.php" class="link">¿Qué puede hacer PHP?</a>,
+   o vaya directo al <a href="http://php.net/manual/es/tutorial.php" class="link">tutorial
+   introductorio</a> si solamente está interesado en programación web.
+  </p>
+ </div>
+<section id="usernotes">
+ <div class="head">
+  <span class="action"><a href="http://php.net/manual/add-note.php?sect=intro-whatis&amp;redirect=http://php.net/manual/es/intro-whatis.php"><img src="./PHP_files/notes-add@2x.png" alt="add a note" width="12" height="12"> <small>add a note</small></a></span>
+  <h3 class="title">User Contributed Notes </h3>
+ </div>
+ <div class="note">There are no user contributed notes for this page.</div></section>    </section><!-- layout-content -->
+        <aside class="layout-menu">
+    
+        <ul class="parent-menu-list">
+                                    <li>
+                <a href="http://php.net/manual/es/introduction.php">Introducción</a>
+    
+                                    <ul class="child-menu-list">
+    
+                          
+                        <li class="current">
+                            <a href="http://php.net/manual/es/intro-whatis.php" title="¿Qué es PHP?">¿Qué es PHP?</a>
+                        </li>
+                          
+                        <li class="">
+                            <a href="http://php.net/manual/es/intro-whatcando.php" title="¿Qué puede hacer PHP?">¿Qué puede hacer PHP?</a>
+                        </li>
+                            
+                    </ul>
+                    
+            </li>
+                        
+                    </ul>
+    </aside>
+
+
+  </div><!-- layout -->
+         
+  <footer>
+    <div class="container footer-content">
+      <div class="row-fluid">
+      <ul class="footmenu">
+        <li><a href="http://php.net/copyright.php">Copyright © 2001-2018 The PHP Group</a></li>
+        <li><a href="http://php.net/my.php">My PHP.net</a></li>
+        <li><a href="http://php.net/contact.php">Contact</a></li>
+        <li><a href="http://php.net/sites.php">Other PHP.net sites</a></li>
+        <li><a href="http://php.net/mirrors.php">Mirror sites</a></li>
+        <li><a href="http://php.net/privacy.php">Privacy policy</a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+    
+ <!-- External and third party libraries. -->
+ <script type="text/javascript" src="./PHP_files/jquery.min.js.descarga"></script>
+<script type="text/javascript" src="./PHP_files/cached(4).php"></script>
+<script type="text/javascript" src="./PHP_files/cached(5).php"></script>
+<script type="text/javascript" src="./PHP_files/cached(6).php"></script>
+<script type="text/javascript" src="./PHP_files/cached(7).php"></script>
+<script type="text/javascript" src="./PHP_files/cached(8).php"></script>
+<script type="text/javascript" src="./PHP_files/cached(9).php"></script>
+
+<a id="toTop" href="javascript:;" style="display: inline;"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="./PHP_files/to-top@2x.png"></a>
+
+
+
+
+</body></html>

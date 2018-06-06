@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <title>Diseña Aplicaciones Web</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/tema.proyecto.min.css"/>
+
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <script src="js/jquery-1.11.1.min.js"></script> 
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src ="phonegap.js"></script><!--necesario*/-->
+  
+    <link rel="stylesheet" href="css/theme.app4.min.css"/>
+  
+ <!----Menu Lateral--->
+      <link rel="stylesheet" href="css/sldr.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jsplug.js"></script>
+    <title>Proyecto</title>
+    <script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/1.jpeg','imagenes/html.png','imagenes/CSS1.jpg','imagenes/CSS3.jpg','imagenes/WAMP2.jpg','imagenes/PHP2.jpg','imagenes/JS6.jpg','imagenes/JS5.jpg','imagenes/PHP1.png')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Diseña Aplicaciones Web</h1>
+  </div> 
+      <div class="container">
+    <div id="sidebar">
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina1" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>HTML5</h2> 
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>HTML</h2> 
+      </a>      
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>CSS</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>CSS</h2>
+      </a>      
+     </li> 
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>WAMP</h2>
+      </a>      
+     </li>      
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>JS</h2>
+      </a>      
+     </li>      
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>PHP</h2>
+      </a>      
+     </li>      
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>MYSQL</h2>
+      </a>      
+     </li>      
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina9" class="ui-btn ui-icon-right ui-icon-carat-r">
+       <h2>EDITOR DE CONTENIDO</h2>
+      </a>      
+     </li>       
+    </ul>
+    </div>
+    <div class="main-content">
+    <div class="swipe-area"></div>
+        <a href="#" data-toggle=".container" id="sidebar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </div>
+    </div>
+    <center>
+    <br>
+    <div class="slider">
+        <ul>
+            <li><img src="imagenes/CSS4.gif" alt="sldr"></li>
+            <li><img src="imagenes/html5-games-2.jpg" alt="sldr2"></li>
+            <li><img src="imagenes/uno.jpg" alt="sldr3"></li>
+            <li><img src="imagenes/JS.jpg" alt="sldr4"></li>
+            <li><img src="imagenes/dos.jpg" alt="sldr5"></li>
+            <li><img src="imagenes/WEB1.jpg" alt="sldr6"></li>
+            <li><img src="imagenes/JS4.jpg" alt="sldr7"></li>
+            <li><img src="imagenes/JS5.jpg" alt="sldr8"></li>
+        </ul>
+    </div>
+</center>
+<center>
+<div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false" >
+   <h1>Realizado por: </h1>
+
+	<h2>Andrea Trujillo Machorro</h2>
+<p>4F</p>
+<h1>Especialidad:</h1>
+<p>Programación</p>
+<h2>Submódulo:</h2>
+<p>Desarrola Aplicaciones Móviles</p>
+<h2>Docente:</h2>
+<p>Lic.José Antonio Gómez Hernández</p>
+  </div>
+  	</div>
+  	</center>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final </h4>
+   <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+    
+  <!---Pagina 1-->
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>HTML5</h1> 
+  </div>
+   <center>
+    <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+<h1>¿Qué es HTML5? ¿Para qué me sirve? ¿Cómo funciona? ¿Es difícil escribir en HTML? ¿Dónde puedo escribir HTML?</h1>
+<p>Si buscas en GOOGLE o en cualquier otro buscador la definición de HTML, probablemente encontrarás está:
+“HTML es un lenguaje de programación que se utiliza para el desarrollo de páginas de Internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto”.
+No obstante, este tipo de definiciones no nos dice mucho porque la definición es técnica. Para algunas personas al leer esto, piensan que HTML incluye el diseño gráfico de las páginas web, sin embargo, eso no es cierto ya que HTML sólo sirve para indicar como va ordenado el contenido de una página web. Esto lo hace por medio de las marcas de hipertexto las cuales son etiquetas conocidas en inglés como tags.
+</p>
+   </div>
+  </div>
+	</center>
+  <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/1.jpeg',1)"><img src="imagenes/html5-whats-new-670x335.jpg" alt="" width="560" height="235" id="Image10"></a>
+</center>
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="https://www.w3schools.com/html/html5_intro.asp" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+
+ 
+
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final ATM</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+
+  <!---Final Pagina 1--->
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  		<h1>HTML</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+	<h1>¿Qué es HTML?</h1>
+	<p> Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto.Se trata de un formato abierto que surgió a partir de las etiquetas SGML (Standard Generalized Markup Language). Concepto traducido generalmente como “Estándar de Lenguaje de Marcado Generalizado” y que se entiende como un sistema que permite ordenar y etiquetar diversos documentos dentro de una lista
+	</p>
+  	</div>
+  	</div>
+  	</center>
+  	<center>
+  	
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/html.png',1)"><img src="imagenes/html5-games-2.jpg" width="800" height="400" id="Image18"></a>
+    
+                   <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="https://definicion.de/html/" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+ </center>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final ATM</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+  <!---Final Pagina 2-->
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  		<h1>CSS</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+	<h1>CSS inline,Interno y Externo</h1>
+	<p>Por fin vamos a escribir un poquito de código CSS. Hoy vas a aprender las distintas formas de añadir código CSS en tu web:
+
+<h2>°CSS Inline</h2>
+<h2>°CSS Interno</h2>
+<h2>°CSS Externo</h2>
+<h2>FORMAS DE APLICAR CSS</h2>
+
+Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores web cuando no hay estilos especificados, así como que podemos embeber código CSS en las propias etiquetas de HTML, “en línea”. Vamos a ver ahora dos formas adicionales de aplicar estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo).
+
+css
+ 
+
+Volvemos a lo que hemos denominado código HTML base para el desarrollo del curso, código HTML donde no se aplican estilos.</p>
+
+  	</div>
+  	</div>
+  	   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+	<h1>¿Qué es CSS?</h1>
+	<p>Estructura y reglas de CSS
+		[ Sintaxis básica | Seudo-clases y Seudo-elementos | Orden de cascada]</p>
+<p>
+Sintaxis básica
+Reglas
+Selectores
+Cualquier elemento HTML es un posible selector CSS1. El selector es simplemente el elemento que está conectado a un estilo particular. Por ejemplo, el selector en:
+</p>
+P { text-indent: 3em }
+es P.
+Selectores de clase
+Un selector sencillo puede tener diferentes clases, permitiendo así al mismo elemento tener diferentes estilos. Por ejemplo, un autor puede querer mostrar el código en un color diferente dependiendo del idioma:
+
+<h2>code.html { color: #191970 }
+	code.css  { color: #4b0082 }</h2>
+El ejemplo de arriba ha creado dos clases, css y html para usar con el elemento CODE de HTML. El atributo CLASS se usa en HTML para indicar la clase de un elemento, por ejemplo,
+
+Solo se permite una clase por selector.
+	   Por ejemplo, <h2>code.html.proprietario no es válida.</h2>
+  	</div>
+  	</div>
+  	</center>
+  	<center>
+  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/CSS1.jpg',1)"><img src="imagenes/CSS.jpg" alt="" width="342" height="147" id="Image12"></a>
+    
+               <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="http://www.htmlhelp.com/es/reference/css/structure.html" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+<img src="imagenes/wu.gif" width="800" height="600">
+ </center>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final </h4>
+   <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+  <!----Final Pagina 3-->
+    <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  		<h1>CSS</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+	<h1>AJUSTE RELATIVO A DISPOSITIVO</h1>
+	<p>
+Usando las cajas flexibles CSS
+La propiedad Flexible Box, o flexbox, de CSS3 es un modo de diseño que permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos. Para muchas aplicaciones, el modelo "caja flexible" produce una mejora sobre el modelo "bloque" porque no utiliza la propiedad float, ni hace que los márgenes del contenedor flexible interfieran con los márgenes de sus contenidos.
+	</p>
+  	</div>
+  	</div>
+  	</center>
+  	<center>
+  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/CSS3.jpg',1)"><img src="imagenes/CSS5.jpg" alt="" width="300" height="168" id="Image13"></a>
+    
+            <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="http://www.htmlhelp.com/es/reference/css/structure.html" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+    
+    
+ </center>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Proyecto, ATM</h4>
+   <img src="imagenes/mdpi.png" width="128" height="128">
+</div>
+  </div>
+     <!------------------------->
+      <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  		<h1>WAMP</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false">
+	<h1>WAMP</h1>
+	<p>
+WAMP es el acrónimo usado para describir un sistema de infraestructura de internet que usa las siguientes herramientas:
+
+Windows, como sistema operativo;
+Apache, como servidor web;
+MySQL, como gestor de bases de datos;
+PHP (generalmente), Perl, o Python, como lenguajes de programación.
+El uso de un WAMP permite subir páginas html a internet, además de poder gestionar datos en ellas. Al mismo tiempo, un WAMP proporciona lenguajes de programación para desarrollar aplicaciones web.
+	</p>
+  	</div>
+  	</div>
+  	</center>
+  	<center>
+  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/WAMP2.jpg',1)"><img src="imagenes/wamp.jpg" alt="" width="300" height="168" id="Image14"></a>
+    
+    
+    
+        <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="https://es.m.wikipedia.org/wiki/WAMP" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+ </center>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Proyecto, ATM</h4>
+   <img src="imagenes/mdpi.png" width="128" height="128" >
+</div>
+  </div>
+  
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  		<h1>JS</h1>
+  	</div>
+     <center>
+    <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtenttheme="false">
+	<h3>JS</h3>
+    
+	<p>
+	JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,[3]basado en prototipos, imperativo, débilmente tipado y dinámico.
+Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas[4]aunque existe una forma de JavaScript del lado del servidor(Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo.
+	</p>
+  	</div>
+    	</div>
+  	<center>
+  	<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/JS5.jpg',1)"><img src="imagenes/JS4.jpg" width="300" height="168" id="Image10"></a>
+    
+    <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="https://es.m.wikipedia.org/wiki/JavaScript" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+ </center>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final </h4>
+   <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+
+  
+  <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a" >
+  		<h1>PHP</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false" >
+	<h1>PHP</h1>
+    <h1>¿Qué es PHP?
+PHP (acrónimo recursivo de PHP: Hypertext Preprocessor) es un lenguaje de código abierto muy popular especialmente adecuado para el desarrollo web y que puede ser incrustado en HTML. </h1>
+
+	Lo que distingue a PHP de algo del lado del cliente como Javascript es que el código es ejecutado en el servidor, generando HTML y enviándolo al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no se sabrá el código subyacente que era. El servidor web puede ser configurado incluso para que procese todos los ficheros HTML con PHP, por lo que no hay manera de que los usuarios puedan saber qué se tiene debajo de la manga.
+
+Lo mejor de utilizar PHP es su extrema simplicidad para el principiante, pero a su vez ofrece muchas características avanzadas para los programadores profesionales. No sienta miedo de leer la larga lista de características de PHP. En unas pocas horas podrá empezar a escribir sus primeros scripts.	</p>
+  	</div>
+  	</div>
+  	</center>
+ <center>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/PHP1.png',1)"><img src="imagenes/PHP2.jpg" width="300" height="168" id="Image16"></a>	
+
+<div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="http://php.net/manual/es/intro-whatis.php" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+ </center>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final </h4>
+   <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+  
+    <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a" >
+  		<h1>MySQL</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false" >
+	<h1>¿Qué es MySQL?</h1>
+    <h1>¿Qué es MySQL? </h1>
+
+	¿Qué es MySQL?
+¿Qué es MySQL?
+MySQL es un sistema de administración de bases de datos (Database Management System, DBMS) para bases de datos relacionales. Así, MySQL no es más que una aplicación que permite gestionar archivos llamados de bases de datos.
+
+Existen muchos tipos de bases de datos, desde un simple archivo hasta sistemas relacionales orientados a objetos. MySQL, como base de datos relacional, utiliza multiples tablas para almacenar y organizar la información. MySQL fue escrito en C y C++ y destaca por su gran adaptación a diferentes entornos de desarrollo, permitiendo su interactuación con los lenguajes de programación más utilizados como PHP, Perl y Java y su integración en distintos sistemas operativos.
+
+También es muy destacable, la condición de open source de MySQL, que hace que su utilización sea gratuita e incluso se pueda modificar con total libertad, pudiendo descargar su código fuente. Esto ha favorecido muy positivamente en su desarrollo y continuas actualizaciones, para hacer de MySQL una de las herramientas más utilizadas por los programadores orientados a Internet.</p>
+  	</div>
+  	</div>
+  	</center>
+    <center>
+    <img src="imagenes/my1.png" width="292" height="173">
+    </center>
+    <div data-role="main" class="ui-content" align="center">
+<div style="width:30%;">
+	<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+		<li class="ui-first-child ui-last-child">
+			<a href="http://www.esepestudio.com/noticias/que-es-mysql" data-role="button" >
+				<h2>Ver más</h2>
+			</a>
+		</li>
+     </ul>
+ </div>
+</div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+   <h4>Proyecto Final </h4>
+   <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+   </div>
+  </div>
+</div>
+  
+  
+   <div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+  	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a" >
+  		<h1>EDITOR DE CONTENIDO</h1>
+  	</div>
+  	<center>
+   <div data-role="main" class="iu-content">
+   <div data-role="collapsible" data-comtent-theme="false" >
+    <h1>EDITOR DE CONTENIDO </h1>
+
+	<p>Cuenta con una interfaz que controla una o varias bases de datos donde se aloja el contenido del sitio web. El sistema permite manejar de manera independiente el contenido y el diseño. Así, es posible manejar el contenido y darle en cualquier momento un diseño distinto al sitio web sin tener que darle formato al contenido de nuevo, además de permitir la fácil y controlada publicación en el sitio a varios editores. Un ejemplo clásico es el de editores que cargan el contenido al sistema y otro de nivel superior (moderador o administrador) que permite que estos contenidos sean visibles a todo el público (los aprueba).</p>
+  </div>
+  	</div>
+  	</center>
+    <center>
+    <img src="imagenes/EDI.jpg" width="640" height="424">
+    </center>
+  
+
+   <center>
+    <br>
+    <div class="slider">
+        <ul>
+            <li><img src="imagenes/WEB6.jpg" alt="sldr"></li>
+            <li><img src="imagenes/WEB7.jpg" alt="sldr2"></li>
+            <li><img src="imagenes/WEB9.jpg" alt="sldr3"></li>
+            <li><img src="imagenes/WEB4.jpg" alt="sldr4"></li>
+            <li><img src="imagenes/WEB3.jpg" alt="sldr5"></li>
+            <li><img src="imagenes/wamp.jpg" alt="sldr6"></li>
+            <li><img src="imagenes/CSS5.jpg" alt="sldr7"></li>
+            <li><img src="imagenes/INTERFAZ1.jpg" alt="sldr8"></li>
+        </ul>
+    </div>
+</center>
+  
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+       <h4>Proyecto Final </h4>
+       <h4>Andrea Trujillo Machorro</h4><img src="imagenes/mdpi.png" width="46" height="46">
+  	</div>
+  	</div>
+ 
+ 
+  
+</body>
+</html>
